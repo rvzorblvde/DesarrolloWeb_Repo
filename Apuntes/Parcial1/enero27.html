@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>TABLAS</h1>
+    
+    <table border="1"> 
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Carrera</th>
+            <th>Semestre</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Jair</td>
+            <td>23</td>
+            <td>Sistemas</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sofia</td>
+            <td>21</td>
+            <td>Enfermeria</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Briseida</td>
+            <td>18</td>
+            <td>Comunicacion</td>
+            <td>1</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+    </table>
+
+<br><br>
+
+    <form action="./respuesta.html" method="get">
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" name="Nombre" required minlength="8">
+
+        <label for="Password">Contraseña</label>
+        <input type="password" id="Password" name="Password">
+
+        
+        <!--<input type="checkbox">
+        <input type="color">
+        <input type="file">-->
+
+        <button type="button">Entrar</button> <!--type="button" es para dar un comportamiento con JS después-->
+    </form>
+</body>
+</html>
