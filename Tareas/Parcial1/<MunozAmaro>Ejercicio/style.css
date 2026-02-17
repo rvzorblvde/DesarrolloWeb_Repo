@@ -1,0 +1,56 @@
+body {
+    background-color: #e2e8f0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Serif', Georgia, 'Times New Roman';
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 0.9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #333;
+}
+
+p {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.subrayado {
+    color: #666;
+    text-decoration: underline;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+img {
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+}
