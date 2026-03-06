@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!--<script src="./script.js"></script>-->
+
+    <div>
+        <h1>Hola Mundo</h1>
+        <h1 id="elemento">Hola Mundo</h1>
+        <h1>Hola Mundo</h1>
+        <h1 class="texto">Hola Mundo</h1>
+        <h2 class="texto">Hola Mundo</h2>
+        <h1>Hola Mundo 2</h1>
+        
+        <script>
+            //Obtener un solo elemento
+            // const h1 = document.querySelector("h1");
+            console.log(h1);
+
+            //Seleccionar todos
+            const elements = document.querySelectorAll("h1");
+            console.log(elements);
+
+            // Por ID
+            const h1 = document.getElementById("#elemento");
+
+            // Por clsae
+            const textos = document.getElementsByClassName("texto");
+
+            // Por atributo name .getElementByName
+        </script>
+    </div>
+
+    <!-- <script> 
+        // Todo dentro es código JS a ejecutra
+        // Deberia ir todo antes de cerrar el body
+
+        // alert("Holaaaa");
+        // Muestra un 5 en la consola de JS
+
+        function saludar() {
+                    const a = 2;
+        const b = 3;
+        const c = a + b;
+        console.log(c);
+        // NO se ejecuta porque se manda llamar
+
+        return c;
+        }
+    </script> -->
+
+</body>
+</html>
