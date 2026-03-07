@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22 de Enero</title>
+</head>
+
+<body>
+    <h1 id="Inicio">Párrafos (p)</h1>
+    <p>Los elementos p, son utilizados para distribuir el texto en párrafos.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at dolores molestiae sunt autem placeat officiis consequatur ad ex officia deleniti ea culpa minima ipsum necessitatibus dolorem debitis magni perferendis minus rerum nobis suscipit? Vitae soluta possimus ab cupiditate nostrum qui explicabo assumenda officiis dolor ex, sapiente repellendus dolorem doloremque porro voluptates cum suscipit tempore. Repellat asperiores voluptate rerum esse numquam vitae quasi beatae molestiae impedit tempore culpa officiis temporibus cupiditate quisquam illo quos aliquam ratione dolorem, sit velit atque est? Qui, accusantium? Mollitia eaque similique veritatis provident perferendis porro, animi sint voluptates? Debitis, obcaecati. Modi reprehenderit animi sed iusto?</p>
+
+    <h1>Enlaces o anclas</h1>
+    <p>Crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página.</p>
+
+    <p>Se usa el atributo &lt;href&gt; para indicar la página o elmemento a enlazar.</p>
+
+    <h2>Casos</h2>
+    <ol>
+        <li>
+            Si el enlace es una página, el valor de dicho atributo será la URL del sitio.
+            <p><b>Ejemplo:</b> href=&quot;https://google.com/&quot;</p>
+        </li>
+        <li>
+            Si el enlace es hacia un elemento, el valor será un signo de gato/hash (#) seguido por el ID de dicho elemento.
+            <p><b>Ejemplo:</b> href=&quot;Inicio&quot;</p>
+
+            <p>Si aún no sabemos a donde redigirá el ancla, solamente ponemos un #.</p>
+        </li>
+    </ol>
+
+    <h3>Ejemplo 1</h3>
+
+    <p>Este enlace nos redigirá a Google:</p>
+    <a href="https://google.com/">Ir a Google</a>
+
+    <p>Este hace lo mismo pero nos abre una pestaña nueva por el atributo target=&quot;_blank&quot;</p>
+    
+    <!--Target = blank, que el enlace redigirga en una pestaña nueva (Opcional)-->
+    <a href="http://google.com" target="_blank">Ir a Google</a>
+
+    <h3 id="miElemento">Ejemplo 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, fugit vel? Perferendis impedit ex repellat sunt, quisquam sint velit laudantium omnis! Dolorem distinctio similique explicabo aliquid? Id voluptatum quasi culpa dicta quis odio corrupti delectus sint officia aliquam, numquam iste praesentium! Modi illo nemo ab, facere eum fugit eveniet dolorem quaerat rerum impedit? Nulla blanditiis odio, repellat tempore quibusdam fugiat. Perspiciatis adipisci dolorum doloremque ab alias sequi harum fuga minus quo soluta optio eos quas deserunt accusantium fugit eligendi cum aut ad incidunt, nostrum vero ut. Minus assumenda modi qui dolorem exercitationem placeat temporibus facilis, est maiores eligendi sit hic, fugiat iure dignissimos adipisci libero! Numquam dolorum quia sunt iure officiis veritatis exercitationem nemo natus minus, veniam, ut minima consequuntur.</p>
+
+    <a href="#Inicio">Regresar al inicio</a>
+
+    <h3>Ejemplo 3</h3>
+
+    <p>Este otro ancla nos manda a la página dos</p>
+    <a href="./pagina2.html">Ir a página dos</a>
+
+    <h1>Imágenes</h1>
+
+    <p>El elemento &lt;img&gt; nos permite mostrar una imagen dentro de nuestra página.</p>
+
+    <ul>
+        <li>Con el atributo <b>src</b> indicaremos la ubicación de la imagen que queremos mostrar (local o externa)</li>
+
+        <li>El atributo <b>alt</b> define un texto alternativo para describir la imagen en caso de que no se pueda mostrar.</li>
+    </ul>
+
+    <p>&lt;img src=&quot;https://picsum.photos/200/300&quot; alt=&quot;Imagen de prueba&quot;/&gt;</p>
+
+    <h3>Ejemplo 1: Imagen local</h3>
+
+    <p>Se usa la ruta &quot;./auto.jpg&quot; para especificar la ruta del archivo local.</p>
+    <img src="./auto.jpg" alt="Lancer Evo 5" width="1100px"/>
+
+    <h3>Ejemplo 2: Imagen de internet:</h3>
+
+    <p>Se usa una dirección de internetpara obtener la imagen.</p>
+
+    <img src="https://picsum.photos/200/300" alt="Imagen de prueba"/>
+
+    <h3>Ejemplo 3: Imagen no encontrada</h3>
+    <p>Por cualquier motivo que no se pueda mostrar la imagen, se usa el texto definido en el atributo alt.</p>
+    <img src="picsum.photos/200/300" alt="Imagen de muestra">
+
+    <h2>Listas</h2>
+
+    <p>Se pueden organizar elementos utilizando &lt;ol&gt; para listas ordenadas y &lt;ul&gt; para listas no ordenadas.</p>
+    <p>La etiqueta &lt;li&gt; sirve para definir cada elemento de la lista (Puede ser texto u otros elementos).</p>
+
+    <h3>Lista ordenada:</h3>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <h3>Lista ordenada:</h3>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <p>Puede incluir subelementos y combinar los tipos de listas.</p>
+        <h3>Lista ordenada</h3>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <ol>
+            <li>Subelemento 1</li>
+            <li>Subelemento 2</li>
+            <li>Subelemento 3</li>
+        </ol>
+        <li>Elemento 3</li>
+    </ul>
+
+    <h2>Más etiquetas de texto</h2>
+    <p>La etiqueta &lt;b&gt; nos sirve para resaltar <b>texto en negrita</b>.</p>
+    <p>&lt;br&gt; Nos permite dar saltos de línea y no requiere etiqueta de cierre.</p>
+        <p>La etiqueta &lt;i&gt; nos permie poner el <i>texto en cursiva</i>.</p>
+
+</body>
+</html>
