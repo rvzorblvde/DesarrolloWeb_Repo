@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27 de Enero</title>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+    <p>Se pueden usar tablas para distribuir la información utilizando la etiqueta &lt;table&gt;.</p>
+
+    <ul>
+        <li>Dentro de esta etiqueta usaremos &lt;tr&gt; (table row) para dividir cada renglón.</li>
+        <li>Dentro de cada renglón, se usa &lt;td&gt; (table data) para definir cada celda de la tabla.</li>
+        <li>&lt;th&gt; (table header) servirá para resaltar encabezados en nuestra tabla, se utiliza como el primer elemento de cada columna o renglón.</li>
+        <li>Por defecto todas las celdas ocupan el mismo espacio pero podemos establecer que ciertas celdas ocupen más espcacio a lo largo o ancho utlizando los atributos <i>colspan</i> y <i>rowspan</i></li>
+    </ul>
+
+    <h2>Ejemplo:</h2>
+
+    <table border="1">
+        <tr>
+            <th>Alumnos</th>
+            <th>Carrera</th>
+            <th>Edad</th>
+        </tr>
+
+        <tr>
+            <td>Juan</td>
+            <td>Computación</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>Laura</td>
+            <td>Sistemas</td>
+            <td>18</td>
+        </tr>
+
+        <tr>
+            <td>Pablo</td>
+            <td>Sistemas</td>
+            <td>19</td>
+        </tr>
+
+        <tr>
+            <td>María</td>
+            <td>Computación</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+    <p><b>Nota</b> Por defecto en HTML, las tablas no contienen ningún borde ni separador entre celdas, lo correcto es añadir dichas características con CSS, pero existe un atributo HTML llamado <b>Border</b> con el que lo podemos hacer, pero lo correcto siempre será usar CSS.</p>
+
+    <h2>Ejemplo 2:</h2>
+
+    <p>Ejemplo usando el atributo <i>rowspan</i>.</p>
+
+    <table border="1">
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+        </tr>
+
+        <tr>
+            <td>Harina</td>
+            <td>1 Kg</td>
+            <td>$35.00</td>
+        </tr>
+
+        <tr>
+            <td>Frijol</td>
+            <td>2 Kg</td>
+            <td rowspan="2">$21.50</td>
+        </tr>
+
+        <tr>
+            <td>Chile</td>
+            <td>500 gms</td>
+        </tr>
+    </table>
+
+    <h2>Ejemplo 3:</h2>
+
+    <p>Usando el atributo <i>colspan</i></p>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Pago</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>Juan</td>
+            <td rowspan="2">$200</td>
+            <td>$450</td>
+        </tr>
+
+        <tr>
+            <td>Alicia</td>
+            <td>$550</td> <!--Si no se respeta la empuja horizontal o verticalmente dependiendo el atributo-->
+        </tr>
+
+        <tr>
+            <td>Pablo</td>
+            <td>$170</td>
+            <td>$220</td>
+        </tr>
+    </table>
+    
+    <h1>Formularios</h1>
+
+    <p>Uno de los <b>principales puntos de interacción</b> entre usuario y sitio web/aplicación. Permiten la introducción de datos que se envían a un servidor web para su procesamiento y almacenamiento.</p>
+
+    <p>Está compuesto por uno o más controles de formulario además de algunos elementos adicionales.</p>
+
+    <p>Los controles pueden ser campos de texto de varias líneas, cajas desplegables, botones, casillas de verificación o botones de opción y <b>se crean principalmente con el elemento &lt;input&gt;</b>.</p>
+
+    <h2>principales elemenos para un formulario</h2>
+
+    <ul>
+        <li><b>&lt;form&gt;</b>: Etiqueta principal que contiene todo el formulario y sus elementos, sus atributos principales son <i>method</i>, con el que definimos el método HTTP con el que viajarán los datos del formulario como post o get, y <i>action</i> que indica la ruta a donde se enviarán los datos.</li>
+
+        <li><b>&lt;action&gt;</b>: Representa una etiqueta en nuestra interfaz y se suele ligar a un control <i>input</i> utilizando el atributo for y colocando como valor el ID de dicho elemento.</li>
+    </ul>
+
+    <h2>Elementos de control</h2>
+
+
+    <form action="./registro.html" method="get">
+        <p>El elemento HTML &lt;input&gt; se usa para crear controles interacitvos para formularios web con el fin de recibir datos del usuario.</p>
+        
+        <p>Es uno de los elementos más potentes y complejos de HTML debido a su gran combinación de atirbutos y atributos de entrada</p>
+        
+        <p>El atributo más importante de este elemento es <i>type</i> el cual podrá contener valores como text, password, number, date, radio, range, etc. dicho valor indicará que tipo de control será el elemento y su comportamiento.</p>
+        
+        <p>Con el atributo <i>name</i>, le asignamos un nombre al elemento y por lo tanto a su valor, que posteriormente será con el que la información viajará cuando se envie.</p>
+
+        <br>
+
+        <h3>Ejemplo de input de tipo texto (text):</h3>
+        
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required minlength="10">
+
+        <p>El atributo <i>id</i> sirve para relacionar el input a la etiqueta <i>for</i> del label.</p>
+
+        <h3>Ejemplo de input tipo contraseña (password):</h3>
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="password" required placeholder="Ingresa tu usuario">
+
+        <h3>Ejemplo de input de checkbox:</h3>
+        <input type="checkbox">
+
+        <h3>Ejemplo de input de color:</h3>
+        <input type="color">
+
+        <h3>Ejemplo de input de numero (number):</h3>
+
+        <input type="number" name="" id="" min="10" max="20">
+
+        <h3>Ejemplo de input de archivo (file):</h3>
+        <input type="file" name="" id="">
+
+        <br>
+
+        <p>Algunos inputs como el tipo <i>tel</i> no cambian su apariencia más que en la interfaz de teclado móvil.</p>
+        <!--Ctrl + Espacio da todos los tipos de input-->
+
+        <p>El atributo <i>required</i> hace que el campo sea obligatorio.</p>
+
+        <p>Los atributos <i>minlength</i> y <i>maxlength</i> definen el largo mínimo y máximo para el campo.</p>
+
+        <p><i>placeholder</i> Da una pista sobre el campo</p>
+
+        <p>En etiquetas <b>number</b> se puede definir mínimo y máximo con <i>min</i> y <i>max</i>.</p>
+
+        <h3>Botones</h3>
+        <p>La etiqueta &lt;button&gt; representa un elemento clickeable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar. <br> El atributo <i>type nos indica el tipo de botón:</i></p>
+
+        <ul>
+            <li><b>submit</b>: Valor por defecto y con este indicamos que el botón va a interactuar directamente con el formulario que lo contiene y servirá para mandar la información capturada a la ruta definida en dicho formulario.</li>
+            <li><b>reset</b>: Reestablece los valores iniciales de los controles en el formulario donde está incluido.</li>
+            <li><b>button</b>:Desactivamos la interacción con el form (Si existe) y tendremos que agregar el comportamiento mediante eventos.</li>
+        </ul>
+
+        <button type="button">Entrar</button>
+    </form>
+
+    <h2>Ejemplo de formulario básico:</h2>
+    <form action="../form-result.php" method="get">
+        <p> Ingresa tu nombre completo: <input type="text" name="nombrecompleto" /> </p>
+        <p> Deja un mensaje: <br /> <textarea name="mensaje"></textarea> </p>
+        
+        <button type="submit">Enviar información</button>
+    </form>
+</body>
+
+</html>
