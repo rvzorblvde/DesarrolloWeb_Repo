@@ -1,0 +1,6 @@
+/*Cambiar el color de todos los títulos h1*/
+
+h1 {
+    font-size: 40px;
+    color: green;
+}
