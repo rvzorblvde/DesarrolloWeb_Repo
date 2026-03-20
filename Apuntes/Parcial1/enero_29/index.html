@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>29 de Enero</title>
+
+    <style>
+        /*Aquí podemos escribir CSS basado en reglas.*/
+
+        /*A todos los elementos <li> aplicar un fondo rosa.*/
+        li {
+            background-color: pink;
+        }
+
+        /*
+        * h1 -> Selector
+        * color: -> Propiedad
+        * blue; -> Valor
+        */
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Elemento Div</h1>
+    <ul>
+        <li>Sirve para crear secciones o agrupar contenidos, crea una caja virtual para agrupar más contenido.</li>
+        <li>Viene de la palabra <i>División</i>.</li>
+        <li>Por sí solo no representa contenido visual en la página, para poder entenderlo y verlo mejor es necesario aplicar estilos CSS para distinguirlo.</li>
+    </ul>
+
+    <div style="background-color: limegreen;">
+        <h2>Este tí tulo se contiene dentro de un div y es color <b>verde limón</b>.</h2>
+
+        <p>Este párrafo hace lo mismo.</p>
+    </div>
+
+    <h2>Elemento Span</h2>
+
+    <p>Esta etiqueta nos sirve para agrupar elementos de texto y dar estilos.</p>
+    <ul>
+        <li>Viene de abarcar en inglés.</li>
+        <li>Al igual que el div, no tiene estilo por si solo.</li>
+        <li>Es utilizado dentro de otro texto como un párrafo o encabezado.</li>
+    </ul>
+
+    <div>
+        <h2>Ejemplo de Span</h2>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo excepturi earum reiciendis soluta, atque consequatur dicta eius qui consectetur ipsam officiis numquam laudantium rerum, magni ullam temporibus accusamus possimus culpa rem odit unde reprehenderit. <span style="color:crimson;">Sit ipsam a illo omnis consequatur corporis perferendis exercitationem quisquam dignissimos provident eum nihil odio totam cupiditate consectetur, voluptatibus explicabo. Illo amet libero consequuntur alias temporibus, a eos ad rerum assumenda, tenetur, officiis expedita perspiciatis pariatur exercitationem ratione illum sunt quaerat numquam nulla nemo tempore enim ipsa deserunt eius? </span> Impedit aliquid molestiae blanditiis consequatur modi laboriosam a? Debitis dolorum a repudiandae hic qui reprehenderit quisquam, aliquam ea commodi maxime rem, sit, itaque culpa fuga vero esse nihil nulla. Eligendi iste labore omnis libero, saepe voluptatibus ducimus cumque sit est ullam magnam consequatur distinctio earum dolorum quidem corporis, fugit illo dolore doloremque dicta quae numquam. Cupiditate reiciendis quam vero ea, repudiandae maxime. Magnam vel in voluptatem distinctio adipisci est quo impedit fugiat. Consequatur eveniet voluptas corporis ducimus praesentium? Repudiandae voluptatem possimus sunt voluptates repellat vero numquam iste, eos maiores harum corrupti commodi vel tenetur error voluptatum ratione ab natus. <span style="color: blueviolet;">Fugiat sequi doloremque sint cumque beatae iusto dolores veritatis labore maxime deleniti qui, possimus minus, magnam accusantium vel.</span></p>
+    </div>
+
+    <h1>HTML Semántico</h1>
+    
+    <p>Es el uso de <b>etiquetas que describen el signifcado del contenido</b>, no solo su apariencia. Usar HTML semántico permite:</p>
+
+    <ul>
+        <li>Mejor accesibilidad (<b>lectores de pantalla</b>).</li>
+        <li>Mejor <b>SEO</b>.</li>
+        <li>Código más <b>legible y mantenible</b>.</li>
+        <li>Menos dependencia de <span style="color: red;">&lt;div&gt;</span></li>
+    </ul>
+
+    <h2>Etiquetas principales</h2>
+
+    <h3>Estructura general del sitio:</h3>
+
+    <ol>
+        <li>&lt;header&gt; = Encabezado del sitio o sección.</li>
+        <li>&lt;nav&gt; = Navegación principal.</li>
+        <li>&lt;main&gt; = Contenido principal (Solo uno).</li>
+        <li>&lt;footer&gt; = pie de página</li>
+    </ol>
+
+    <h3>Contenido y secciones</h3>
+    
+    <ol>
+        <li>&lt;article&gt; = Contenido independiente (Post, noticia, tarjeta).</li>
+        <li>&lt;section&gt; = Agrupa contenido relacionado.</li>
+        <li>&lt;aside&gt; = Contenido secundario (Ads, recomendaciones).</li>
+    </ol>
+
+    <h1>CSS</h1>
+
+    <p>Los documentos HTML (contenido) incluirán información y datos, todo lo relativo a la información a transmitir. Los documentos CSS (presentación) incluirán solo los aspectos relacionados con el estilo (diseño, colores, formas, etc...).</p>
+
+    <h2>Formas de aplicar CSS</h2>
+
+    <ul>
+        <li><b>En línea:</b> Utilizando el atributo <i>style</i> del elemento HTML al cual queremos aplicar estilos. <br> &lt;elemento style=""&gt;... &lt;/elemento&gt;</li>
+        <li><b>Embebido o interna:</b> Insertando un elemento &lt;style&gt;dentro del &lt;head&gt; de nuestro documento HTML.</li>
+        <li><b>Externo:</b> Enlazar uno o más documentos CSS a nuestros HTML insertando la siguiente etiqueta:<br> &lt;link href="style.css" rel="stylesheet" type="text/css"/&gt;</li>
+    </ul>
+
+    <h2>Estructura de CSS</h2>
+    <p>Css se basa en reglas, donde tenemos:</p>
+
+    <ul>
+        <li><b>Selector:</b> Él o los elementos a los cuales se les aplicará el estilo.</li>
+        <li><b>Propiedad:</b> Características que queremos editar.</li>
+        <li><b>Valor:</b> Nueva apariencia que tendrá la propiedad definida.</li>
+    </ul>
+
+    <p>En el CSS en línea, se omite el selector puesto que se aplica solamente al elemento que lo contiene.</p>
+
+    <p><b>Prioridad:</b> 1. En línea, 2. Embebido y 3. Externo.</p>
+
+    <h2>Selectores:</h2>
+    <p>Los selectores son una parte de la estructura CSS que indica a cual o cuales elementos se va a aplicar la regla que se está definiendo. <br> Hay diferentes tipos de selectores con los que podremos aplicar un estilo a un elemento, todo dependerá de la estructura de nuestra página.</p>
+
+    <p>El no hacer uso correcto de los selectores puede hacer que los estilos no se apliquen correctamente a los elementos deseados o bien, que se apliquen a los elementos equivocados. Podemos utilizar más de un selector en una misma relga(Ver archivo style.css).</p>
+
+    <h3>Tipos de selectores</h3>
+
+    <ul>
+        <li><b>Por elemento o tipo:</b>Está delimitado por un elemento HTML</li>
+        <li><b>Por clase:</b> Utilizando el atributo <i>class</i> en nuestros elementos podemos delimitar un grupo de ellos para aplicar cierta regla: .miClase {...}</li>
+        <li><b>Por ID:</b>Similar al de la clase, pero aplicando el atributo <i>id</i>: #miID {...}</li>
+        <li><b>Por atributo:</b> Delimitando a los elementos que incluyan algo atributo definido, independientemente del valor: a[href] {...}</li>
+        <li><b>Por atributo y valor:</b> Similar al del atributo pero este también delimitamos por el valor de dicho atributo: a[href="www.google.com"] {...}</li>
+    </ul>
+</body>
+
+</html>
