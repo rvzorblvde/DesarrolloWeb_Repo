@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 de Febrero</title>
+
+    <style>
+        .block {
+            width: 250px;
+            height: 250px;
+            background-color: brown;
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            /*inline previene que alto y ancho tenga algun efecto*/
+        }
+
+        /* p {
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+        } */
+
+        .combinado {
+            display: inline-block;
+        }
+
+        .contenedor {
+            width: 600px;
+            height: 750px;
+            background-color: orange;
+        }
+
+        .elemento {
+            width: 50%;
+            height: 33%;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Propiedad Display</h1>
+
+    <ul>
+        <li>Especifica el trato que se le dará a un elemento en nuestra página para definir si compartirá o no espacio horizontal con otros elementos.</li>
+        <li>Los principales valores para esta Propiedad son <b>block</b> e <b>inline</b>, incluso los elementos por defecto ya cuentan con uno de estos dos valores asignados.</li>
+    </ul>
+
+    <h2>display: block</h2>
+    <ul>
+        <li>No pueden compartir espacio horizontal con otros elementos, por lo que los siguientes serán desplazados hacia abajo.</li>
+        <li>Admiten dimensiones (width, height) como margin, padder y border.</li>
+        <li>Suelen ser usados para generar estructuras, ya que pueden contener elementos hijos que sean inline.</li>
+    </ul>
+
+    <div class="block">
+    </div>
+
+    <div class="block">
+    </div>
+
+    <div class="block">
+    </div>
+
+    <p>Lorem, ipsum dolor.</p>
+
+    <h1>Hola!</h1>
+    <h2>Hola mundo</h2>
+
+    <h2>display: inline</h2>
+
+    <ul>
+        <li>Permite que varios elementos compartan espacio horizontalmente.</li>
+        <li>Solo admiten margin, padding y border.</li>
+        <li>Si un elemento llega al límite horizontal se empuja hacia abajo.</li>
+    </ul>
+
+    <p>Enlace 1</p>
+    <p>Enlace 2</p>
+    <p>Enlace 3</p>
+
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+    <a href="#">Enlace 3</a>
+
+    <h2>Notas adicionales:</h2>
+    <ul>
+        <li>Se pueden combinar algunas características de ambos modos usando display: inline-block, de esta manera se puede tener un elemento de línea que si acepta valores de dimensiones.</li>
+        <li>También permite evitar que un elemento se muestre con display:none.</li>
+        <li>Existen valores más complejos que nos sirven para definir el comportamiento de los elementos hijos como display: flex.</li>
+    </ul>
+
+    <p class="combinado">Enlace 1</p>
+    <p class="combinado">Enlace 2</p>
+    <p class="combinado">Enlace 3</p>
+
+    <a href="#" class="combinado">Enlace 1</a>
+    <a href="#" class="combinado">Enlace 2</a>
+    <a href="#" class="combinado">Enlace 3</a>
+
+    <!-- <h1>Propiedad Position</h1>
+
+    <h2>position: fixed</h2>
+    <ul>
+        <li>El elemento es removido del flujo de documento y deja de afectar el posicionamiento de nuestros elementos.</li>
+        <li>Se posiciona con relación al bloque principal establecido por el <b>viewport</b>.</li>
+        <li>Su valor final se determina con las propiedades top, right, left y bottom.</li>
+    </ul>
+
+    <h2>position: static</h2>
+    <ul>
+        <li>Se posiciona de acuerdo al flujo normal de la página.</li>
+        <li>Valor por defecto de todos los elementos.</li>
+        <li>Las propiedades top, left, right y bottom no tienen efecto.</li>
+    </ul> -->
+
+    <h1>Unidades de medida:</h1>
+    <p>Podemos asignar a varias propiedades CSS un valor numérico con su respectiva unidad de medición.<br>Estas unidades tienen diferente efecto según como se estén utilizando.</p>
+
+    <ol>
+        <li><b>Pixeles (px):</b> Unidad más básica con la que trabaja CSS para pintar elementos en el viewport y no siempre son del mismo tamaño que un pixel físico.</li>
+        <li><b>Porcentaje (%):</b> Establece el tamaño del elemento con respecto al tamaño del elemento padre.</li>
+        <li><b>Viewport (vh/vw):</b> Establece el tamaño del elemento con respecto al tamaño del</li>
+    </ol>
+
+    <h3>Ejemplo:</h3>
+
+    <div class="contenedor">
+        <div class="elemento"></div>
+    </div>
+</body>
+
+</html>

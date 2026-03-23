@@ -1,0 +1,49 @@
+/*Selector general, se aplica a todo que no tenga nada que lo sobre escriba*/
+* {
+    font-size: 24px;
+}
+
+/*Atributo por etiqueta: Se aplica a las etiquetas a*/
+a {
+    background-color: red;
+    font-size: 24px;
+    color: white;
+}
+
+/*Se aplica a los h1 dentro de un div*/
+div h1 {
+    font-size: 28px;
+    color: white;
+}
+
+/*Por clase: Se aplica a todas las etiquetas con un nombre de clase*/
+.section-div {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+/*Atributo por valor: Se aplica a las etiquetas <a> con el atributo href="" definido*/
+a[href] {
+    background-color: limegreen;
+    color: green;
+}
+
+/*Atributo por ID: Se aplican a los que tienen id unicos*/
+#favoritos {
+    background-color: rgb(14, 157, 176);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#Next {
+    background-color: violet;
+    color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p.id {
+    background-color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 11px;
+    color: white;
+}
