@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 de Febrero</title>
+
+    <style>
+
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin: 5px;
+        }
+
+        .statico {
+            width: 250px;
+            height: 250px;
+            background-color: lightblue;
+            margin: 5px;
+            text-align: center;
+            position: static;
+        }
+
+        .fijado {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            margin: 5px;
+            text-align: center;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .relativo {
+            position: relative;
+            left: 250px;
+            top: 50px;
+        }
+
+        .circulo {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 100%;
+            position: absolute;
+            top: 50px; /*Acepta valores negativos*/
+            right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedad position</h1>
+
+    <h2>position: fixed</h2>
+
+    <ul>
+        <li>Se posiciona de acuerdo al flujo normal de la página.</li>
+        <li>Es el valor por defecto de todos los elementos.</li>
+        <li>Las propiedades top, right, left y bottom no tienen efecto.</li>
+    </ul>
+
+    <p>Acomoda elementos según los va leyendo</p>
+    <div class="statico">1</div>
+    <div class="statico">2</div>
+    <div class="statico">3</div>
+    <div class="statico">4</div>
+
+    <h2>position: fixed</h2>
+
+    <ul>
+        <li>Valor especial, el elemento es removido del flujo del documento y deja de afectar el procesamiento de otros elementos.</li>
+        <li>Se posiciona con relación al bloque principal, establecido por <b>viewport</b>.</li>
+        <li>Su valor final se determina con las propiedades: top, right, bottom y left.</li>
+    </ul>
+
+    <div class="fijado">fijado</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <h2>position: relative</h2>
+    
+    <ul>
+        <li>El elemento es posicionado con el flujo normal de la página y puede ser desplazado respecto a si mismo con las propiedades de ubicación. </li>
+        <li>El desplazamiento no afecta el posicionamiento de otros elementos ya que el espacio que se le da en la página es como si fuera <b>static</b>.</li>
+    </ul>
+
+    <div class="">1</div>
+    <div class="">2</div>
+    <div class="">3</div>
+    <div class="relativo">relativo</div>
+    <div>5</div>
+
+    <h2>position: absloute</h2>
+    
+    <ul>
+        <li>El elemento es removido del flujo normal de la página y posicionado con el ancestro relativo más cercano.</li>
+        <li>Su posición final es determinada con las propiedaes top, right, left y bottom.</li>
+    </ul>
+
+    <div class="">2</div>
+    <div class="">3</div>
+    <div class="relativo">
+        <div class="circulo"></div>
+    </div>
+
+    <p>Se mueven en conjunto.</p>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</body>
+</html>
