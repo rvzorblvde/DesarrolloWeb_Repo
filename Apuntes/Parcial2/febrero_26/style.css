@@ -1,0 +1,84 @@
+/*Flex Direction*/
+.contenedor {
+    display: flex;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.reverso {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Justify Content*/
+
+.justificado {
+    display: flex;
+    justify-content: center;
+}
+
+.inicio {
+    display: flex;
+    justify-content: start;
+}
+
+.fin {
+    display: flex;
+    justify-content: end;
+}
+
+.espacio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alrededor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.igual {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.elemento {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+    font-size: larger;
+    text-align: center;
+    border: solid 1px black;
+    color: white;
+}
+
+/*Align items*/
+.alinear-centro {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.alinear-fin {
+    height: 800px;
+    display: flex;
+    align-items: end;
+    background-color: lightgray;
+}
+
+/*Flex Wrap*/
+
+.no-reacomodo {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.reacomodo {
+    display: flex;
+    flex-wrap: wrap;
+}

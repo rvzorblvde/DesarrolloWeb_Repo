@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>26 de Febero</title>
+</head>
+
+<body>
+    <h1>Propiedad display: flex</h1>
+
+    <ul>
+        <li>La propiedad CSS display es muy importante porque indica el comportamiento y el despliegue que tendrá un elemento en nuestra página.</li>
+        <li>Sin embargo, el valor <b>flex</b> para esta propiedad es especial, ya que a diferencia de los ejemplos vistos, con este valor comportamos el comportamiento de los elementos que tendrá el elemento al cual se lo aplicamos.</li>
+        <li>Es un valor relativamente nuevo, que nos permite crear un contenedor y manejar su contenido de manera flexible con ayuda de otras propiedades CSS.</li>
+    </ul>
+
+    <p>Algunas propiedades que nos ayudarán a controlar este comportamiento son:</p>
+
+    <ul>
+        <li><b>flex-direction:</b>Nos indica el sentido en el que se acomodan los elementos.</li>
+        <li><b>justify-content:</b>Nos permite controlar el tipo de espaciado y acomodo horizontal que tendrán los elementos entre sí.</li>
+        <li><b>align-items:</b>Nos permite controlar el comportamiento de los elementos con respecto al contenedor flexible de forma vertical.</li>
+        <li><b>flex-wrap:</b>Nos indica el comportamiento de los elementos con respecto al padre cuando estos llegan al límite del espacio disponible.</li>
+        <li><b>flex-grow:</b>Esta propiedad pertenece a los items o elementos hijos y nos sirve para controlar la prioridad de flexibilidad de los elementos.</li>
+    </ul>
+
+    <h2>Propiedad flex-direction</h2>
+
+    <p>flex-direction: row</p>
+
+    <div class="contenedor">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+    <p>flex-direction: column</p>
+    <div class="columna">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+    <p>flex-direction: row-reverse</p>
+    <div class="reverso">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+    <h2>Propiedad justify-content</h2>
+
+    <p>justify-content: center</p>
+    <div class="justificado">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+    </div>
+
+    <p>justify-content: start</p>
+    <div class="inicio">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+<p>justify-content: end</p>
+    <div class="fin">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+<p>justify-content: space-between</p>
+    <div class="espacio">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+<p>justify-content: space-around</p>
+    <div class="alrededor">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+<p>justify-content: space-evenly</p>
+    <div class="igual">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+    <h2>Propiedad align-items</h2>
+
+<p>align-item: center</p>
+    <div class="alinear-centro">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+<p>align-item: end</p>
+    <div class="alinear-fin">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+<h2>flex-wrap: </h2>
+
+<p>flex-wrap: nowrap</p>
+    <div class="no-reacomodo">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+<p>flex-wrap: wrap - acomoda los elementos para abajo</p>
+    <div class="reacomod">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+    </div>
+
+    <h2>Propiedad flex-grow</h2>
+
+<p>flex-grow ejemplos: </p>
+    <div class="contenedor">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento" style="flex-grow: 1;">3 = flex grow de 1</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+    </div>
+
+    <div class="contenedor">
+        <div class="elemento">1</div>
+        <div class="elemento" style="flex-grow: 1;">2 = flex grow de 1</div>
+        <div class="elemento" style="flex-grow: 2;">3 = flex grow de 2</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+    </div>
+
+    <div class="contenedor">
+        <div class="elemento">1</div>
+        <div class="elemento" style="flex-grow: 1;">2 = flex grow de 1</div>
+        <div class="elemento" style="flex-grow: 2;">3 = flex grow de 2</div>
+        <div class="elemento" style="flex-grow: 1;">4 = flex grow de 1</div>
+        <div class="elemento">5</div>
+    </div>
+</body>
+</html>
