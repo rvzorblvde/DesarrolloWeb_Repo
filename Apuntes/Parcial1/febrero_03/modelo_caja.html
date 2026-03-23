@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja de CSS</title>
+
+    <style>
+        div {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(0, 255, 0);
+            /* border-color: #000000;
+            border-style: solid;
+            border-width: 2px; */
+
+            border: solid 2px black; /*Resume lo de arriba*/
+
+            /* margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px; */
+
+            margin: 10px 20px 20px 20px; /*Resume lo de arriba, empieza en top en sentido horario*/
+
+            /* margin: 30px; Indica para todos los lados*/
+
+            /* margin: 40px 50px; Indica primero arriba y abajo y el segundo para izquierda y derecha*/ 
+
+            padding: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Modelo de Caja CSS</h1>
+
+    <p>Es un modulo CSS que define cajas rectangulares, incluyendo sus rellenos y márgenes, que son generadas para los elementos.</p>
+
+    <p>Es importante conocer y entender este modelo, ya que es esencial para la organización y acomodo visual de los elementos en nuestra página.</p>
+
+    <p>Todos los elementos pueden representar su espacioe en cajas, donde dichos elementos pueden crecer o disminuir modificando sus propiedades de CSS.</p>
+
+    <img src="./box-model.png" alt="Vista del modelo de caja.">
+
+    <p>La suma del tamaño de todos los espaciados que tenga este elemento determinará el espacio total que ocupará en nuestra página.</p>
+
+    <h1>Ejemplos:</h1>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo hic rerum voluptate expedita soluta cupiditate assumenda totam id. Commodi maiores architecto ex, sunt laboriosam optio atque dicta fugiat, perspiciatis dolorem dolorum totam minima ducimus? Iusto autem non porro sunt!</p>
+    </div>
+
+    <div>
+    </div>
+
+    <div>
+    </div>
+</body>
+
+</html>
