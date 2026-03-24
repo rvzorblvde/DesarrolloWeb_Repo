@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 de Marzo</title>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+
+    <p>JavaScript es un lenguaje de programación ligero, interpretado o compilado, todos los navegadores web son capaces de interpretar código JS sin necesidad de instalaciones adicionales. Es un lenguaje basado en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para Programación Orientada a Objetos (POO), imperativa y declarativa.</p>
+
+    <ul>
+        <li>Generalmente es utilizado por múltiples librerías web  de frontend como Angular o React.</li>
+        <li>También podemos encontrar con su uso en múltiples herramientas o frameworks no necesariamente de desarrollo web como React Native (Desarrollo Móvil), Node JS (Backend).</li>
+        <li>Al uso puro de JS se le conoce como JavaScript Vanilla.</li>
+    </ul>
+
+    <h2>DOM</h2>
+
+    <p>El modelo de objeto documento (Document-Object Model) es una interfaz de programación para los elementos HTML y XML. Facilita una representación estructurada del documento y define de qué manera los programas pueden acceder, a fin de modificar tanto su estructura, estilo y contenido.</p>
+
+    <p>El DOM nos da una representación del documento como un grupo de nodos y objetos estructurados que tienen propiedades y métodos.<br> Se puede acceder al DOM en nuestro código JS mediante el objeto <b>"document"</b>.</p>
+
+    <p><b>Se puede agregar código JS dentro de HTML con las etiquetas &lt;script&gt; antes del final de &lt;/body&gt;</b>.</p>
+
+    <h3>Ejercicio básico:</h3>
+
+    <p>Entrar a la consola con <i>Ctrl +  Shift + I</i> <br>Ir al apartado Console/Consola</p>
+    <p>Escribir en script.js: <br> const a = 3 <br> const b = 2 <br> const c = a + b <br> Console.log(c)</p>
+
+    <p>Cada que recarguemos la página se ejecuta el código e imprime el resultado.</p>
+
+    <h2>Formas de obtener un Nodo (Elemento) en DOM</h2>
+
+    <ul>
+        <li><b>querySelector():</b> Recibe como parámetro una cadena de texto con el selector mediante el cual vamos a buscar el elemento y regresará el primer elemento que coincida con el selector indicado.</li>
+        <li><b>querySelectorAll():</b> Recibe una cadena con el selector para realizar la búsqueda, pero en este caso regresará una lista de nodos (elementos) con todos aquellos que coincidan con el selector.</li>
+        <li><b>getElementById():</b> Recibe como parámetro una cadena de texto con el id del elemento que regresará.</li>
+        <li><b>getElementsByClassName():</b> Recibe la cadena con el nombre de la clase CSS  y regresará aquellos elementos que la tengan aplicada.</li>
+    </ul>
+
+    <h2>Ejemplo DOM (Revisar script.js)</h2>
+
+    <div>
+        <h4>Hola Mundo</h4>
+        <h4>Hola Mundo</h4>
+        <h4 id="Tiene-ID">Hola Mundo</h4>
+        <h4>Hola Mundo</h4>
+        <h5>Hola Mundo</h5>
+
+        <p class="clase-chafa">Hola</p>
+        <p class="clase-chafa">Hola 2</p>
+        <p class="clase-chafa">Hola 3</p>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
