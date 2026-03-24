@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>03 de Marzo</title>
+</head>
+<body>
+    <h1>Pseudoclases</h1>
+
+    <ul>
+        <li>Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.</li>
+        <li>Con ellas podemos agregar propiedades o bien modificar el valor de ellas para cuando se cumple el estado indicado por la pseudoclase.</li>
+        <li>Para el uso de ellas bastará con utilizar dos puntos después del selector y enseguida colocar el nombre de la pseudoclase, por ejemplo : <b>.miClase:hover {...}</b></li>
+        <li>Las modificaciones a las propiedades sólo se aplican mientras el elemento se encuentre en dicho estado, cuando este se pierda, el elemento regresará a los valores originales en sus propiedades.</li>
+    </ul>
+
+    <h2>Pseudoclases más utilizadas:</h2>
+
+    <ul>
+        <li><b>hover:</b>Se activa cuando el cursor entra en el espacio o se desplaza al interior de algún elemento.</li>
+        <li><b>active:</b>Se activa cuando un elemento está siendo seleccionado con el cursor utilizando el botón principal (regularmente click izquierdo).</li>
+        <li><b>focus:</b>Se activa cuando un elemento de formulario (input, button, textarea, etc...) ha recibido el foco de atención, regularmente cuando se selecciona con el mouse o se navega por los elementos con la tecla TAB.</li>
+    </ul>
+
+    <h1>Transiciones CSS</h1>
+
+    <ul>
+        <li>Son una característica de CSS que nos permite controlar el cambio de valores entre algunas propiedades en específico, evitando que se realicen de golpe y generando una animación simple de un estado A a un estado B.</li>
+        <li><b>No a todas las propiedades se les puede aplicar una transcición</b>, únicamente a aquellas que tengan valores entre los puntos A y B en los que se está transicionando.</li>
+        <li>Las propiedades <i>transition-property, transition-duration, transtition-timing, transition-funciont y transition-delay</i> son las que nos permiten controlar las características de nuestra transición, pero también podemos agruparlos todos dentro de <i>transition</i>.</li>
+    </ul>
+
+    <h2>Ejemplo 1 - Hover</h2>
+
+    <p>Cambia de color y crece de tamaño al pasar el mouse encima de él.</p>
+    <p>La transición hace que cambie de un tamaño  y color a otro en 3 segundos.</p>
+    
+    <div class="clase-hover"> </div>
+
+    <h2>Ejemplo 2 - Hover</h2>
+
+    <p>El texto cambia de color y crece al pasar el mouse por encima de él.</p>
+
+    <p id="ejemplo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quas quibusdam esse modi sint commodi doloribus repellat quia nihil! Molestias sequi quas unde blanditiis, amet, laboriosam labore quod voluptatibus ipsa vel veniam eligendi enim culpa autem repellat nemo eos quidem explicabo pariatur, assumenda in corrupti tenetur necessitatibus? Blanditiis autem facilis neque nulla a quae, quis totam quasi officia, nihil aperiam.</p>
+
+    <h2>Ejemplo 3 - Active</h2>
+
+    <p>Tarda 2 segundos en pasar al estado active después de hacer click.</p>
+
+    <div class="clase-active"></div>
+
+    <h2>Ejemplo 4  - Active</h2>
+
+    <p id="ejemplo4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore fuga, accusamus alias tempora sunt magnam eius officiis! Eveniet amet sint distinctio debitis explicabo nulla quas minima ratione, tempore, illum maxime assumenda neque exercitationem architecto iure necessitatibus, a cumque esse sunt dolorem autem! Inventore autem natus exercitationem perspiciatis dolore quas iusto laborum odio? Ea, voluptatum reiciendis! Assumenda illum autem magni.</p>
+
+    <h2>Ejemplo 5 - Focus</h2>
+
+    <p>Al seleccionar un elemento crece el texto, cambia de color rojo y el fondo cambia de color a azul claro.</p>
+
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+
+    <button>Enviar</button>
+</body>
+</html>

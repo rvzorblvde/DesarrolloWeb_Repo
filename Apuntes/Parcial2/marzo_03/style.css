@@ -1,0 +1,57 @@
+/*Clases CSS generales*/
+.clase-hover {
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    transition-property: background-color width; /*Que propiedad quiero hacer transicionar*/
+    transition-duration: 3s; /*Cuanto quiero que tarde en pasar de un valor a otro*/
+    transition-timing-function: ease; /*Como queremos que haga ese cambio*/
+}
+
+.clase-active {
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    transition: width height background-color 3s 0s linear; /*Se pueden aplicar varios atributos en una sola línea*/
+}
+
+#ejemplo2 {
+    color: green;
+    font-size: medium;
+}
+
+#ejemplo4 {
+    color: orange;
+    font-size: medium;
+}
+
+/*Pseudoclase hover*/
+.clase-hover:hover {
+    background-color: lightblue;
+    width: 500px;
+    height: 500px;
+}
+
+#ejemplo2:hover {
+    color: blue;
+    font-size: large;
+}
+
+/*Pseudoclase Active*/
+.clase-active:active {
+    background-color: lime;
+    width: 500px;
+    height: 500px;
+}
+
+#ejemplo4:active {
+    color: blue;
+    font-size: larger;
+}
+
+/*Pseudoclase Focus*/
+input:focus {
+    font-size: larger;
+    color: red;
+    background-color: lightblue;
+}
