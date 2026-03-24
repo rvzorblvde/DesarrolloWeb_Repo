@@ -1,0 +1,31 @@
+.contenedor-titulo {
+    background-color: rgb(234, 160, 12);
+    line-height: 24px;
+    font-size: 24px;
+    height: 24px;
+    font-weight: 700; /*Este es el tamaño que suelo usar como equivalente a negritas*/
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    min-height: 100vh;
+}
+
+.laterales {
+    flex-grow: 1;
+    background-color: gray;
+    color: white;
+}
+
+.centro {
+    flex-grow: 2;
+}
+
+.laterales, .centro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+    font-size: 18px;
+}
