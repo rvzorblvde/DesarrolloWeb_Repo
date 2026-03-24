@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+.contenedor {
+    width: 100vw;
+    background-color: lightblue;
+}
+
+.elemento {
+    height: 200px;
+    width: 33.3%;
+    float: left;
+}
+
+.elemento1 {
+    background-color: blue;
+}
+
+.elemento2 {
+    background-color: green;
+}
+
+.elemento3 {
+    background-color: red;
+}
+
+/*Asegurarse que cuando sea menor a 375px cada div ocupe todo el ancho*/
+/* @media (width <= 375px) {
+    .elemento {
+        width: 100%;
+    }
+} */
+
+/*Cuando este entre 375 y 768 dos columnas se muestren a la mitad, cambia uno de estos a negro y la ultima abajo al ancho completo*/
+@media (376px <= width <= 768px) {
+    .elemento1 {
+        width: 50%;
+        background-color: black;
+    }
+
+    .elemento2 {
+        width: 50%;
+    }
+
+    .elemento3 {
+        width: 100%;
+    }
+}
+
+@media (width >= 769px) {
+
+}
